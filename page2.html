@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Decide aí!</title>
+
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="pagina-opcoes pagina-rolagem">
+
+    <header class="cabecalho">
+
+        <div class="logo">
+            <a href="body.html">
+                <img src="images/Logo.png" alt="Logo Decide aí!">
+            </a>
+        </div>
+
+        <nav class="menu">
+            <a href="sobre.html">Sobre</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="page2.html">Decide aí!</a>
+        </nav>
+
+    </header>
+
+    <h3>Decide aí!</h3>
+
+    <p>Digite as opções que você está em dúvida:</p>
+
+    <div class="container-roleta">
+        <div class="ponteiro"></div>
+
+        <canvas id="roleta" width="500" height="500"></canvas>
+
+        <div class="centro-roleta">?</div>
+
+
+    </div>
+
+    <div class="controles-roleta">
+    <button class="botton-pausar" onclick="pausarRoleta()">
+        Pausar
+    </button>
+
+    <button class="botton-continuar" onclick="continuarRoleta()" disabled>
+        Continuar
+    </button>
+</div>
+
+    <div class="input-container">
+        <input type="text" id="opcao" placeholder="Digite uma opção...">
+    </div>
+
+    <div class="button-containers">
+
+        <button class="botton-addop" onclick="adicionarOpcao()">
+            Adicionar
+        </button>
+
+        <button class="botton-decidir" onclick="decidir()">
+            Decidir!
+        </button>
+
+        <button class="botton-apgall" onclick="apagarAll()">
+            Apagar Tudo
+        </button>
+
+    </div>
+
+
+
+    <div class="area-conteudo">
+
+        <div class="area-lista">
+            <h2>Lista de opções</h2>
+            <ul id="lista-opcoes"></ul>
+        </div>
+
+        <div class="area-resultado">
+            <h2>Ordem escolhida</h2>
+            <ol id="lista-resultados"></ol>
+        </div>
+
+    </div>
+
+    <div class="redes-sociais">
+
+        <a href="https://github.com/KaueZk" target="_blank" class="rede">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/kaue-silva-de-lima" target="_blank" class="rede">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://codepen.io/Kaue-Silva-de-Lima" target="_blank" class="rede">
+            <i class="fa-brands fa-codepen"></i>
+        </a>
+
+    </div>
+
+</body>
+
+</html>
